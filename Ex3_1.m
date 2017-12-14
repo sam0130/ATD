@@ -10,13 +10,17 @@ y = linspace(-10,10);
 
 figure()
 surf(x,y,g(X,Y))
+xlabel('x')
+ylabel('y')
 
 figure()
 contour(x,y,g(X,Y),100);
+xlabel('x')
+ylabel('y')
 
 x1 = linspace(-3,3);
 figure()
-contour(x,y,g(X,Y),500);
+contour(x,y,g(X,Y),150);
 hold on
 plot(x1,f(x1));
 
